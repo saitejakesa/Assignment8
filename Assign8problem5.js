@@ -6,7 +6,7 @@ var data=JSON.parse(request.response);
 
 data.forEach(usd=>{
     if(usd.currencies[0].code=="USD"){
-        console.log(usd.name)
+        console.log("Country Name:"+usd.name+">>Currency:"+usd.currencies[0].code)
     }
     })
 }
